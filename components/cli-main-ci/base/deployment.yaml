@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: cli-main-ci
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtap-contract-tenant/ec-main-ci/cli-main-ci@sha256:119c01901ed1946a7a2921cb5d694787912434c9115b35a494ce6248ab3ebe6d
+      - image: quay.io/redhat-user-workloads/rhtap-contract-tenant/ec-main-ci/cli-main-ci@sha256:f483d4faaa434f8f0343b9e80e54de29e7907d128c628b45fcf5911098d657dd
         imagePullPolicy: Always
         name: container-image
         ports:
