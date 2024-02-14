@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: cli-main-ci
     app.kubernetes.io/part-of: ec-main-ci
-  name: cli-main-cik5ow
+  name: cli-main-cinxm3
 spec:
   port:
     targetPort: 8080
