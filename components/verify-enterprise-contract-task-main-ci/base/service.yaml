@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: verify-enterprise-contract-task-main-ci
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: verify-enterprise-contract-task-main-ci
+    app.kubernetes.io/part-of: ec-main-ci
+  name: verify-enterprise-contract-task-main-ci
+spec:
+  ports:
+  - name: http-8081
+    port: 8081
+    protocol: TCP
+    targetPort: 8081
+  selector:
+    app: go-app
+    app.kubernetes.io/instance: verify-enterprise-contract-task-main-ci
+status:
+  loadBalancer: {}
